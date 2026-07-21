@@ -80,42 +80,42 @@ def translate():
 # Speech To Text API
 # =====================================================
 
-@app.route("/listen", methods=["GET"])
-def listen():
+# @app.route("/listen", methods=["GET"])
+# def listen():
 
-    text = listen_command()
+#     text = listen_command()
 
-    return jsonify({
+#     return jsonify({
 
-        "success": True,
+#         "success": True,
 
-        "text": text
+#         "text": text
 
-    })
+#     })
 
 
 # =====================================================
 # Text To Speech API
 # =====================================================
 
-@app.route("/speak", methods=["POST"])
-def speaker():
+# @app.route("/speak", methods=["POST"])
+# def speaker():
 
-    data = request.get_json()
+#     data = request.get_json()
 
-    text = data.get("text", translated_output)
+#     text = data.get("text", translated_output)
 
-    lang = data.get("lang", translated_lang)
+#     lang = data.get("lang", translated_lang)
 
-    speak_async(text, lang)
+#     speak_async(text, lang)
 
-    return jsonify({
+#     return jsonify({
 
-        "success": True,
+#         "success": True,
 
-        "message": "Speech started."
+#         "message": "Speech started."
 
-    })
+#     })
 
 
 # =====================================================
