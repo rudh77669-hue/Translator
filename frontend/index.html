@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Language Translator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌍 AI Language Translator</h1>
+
+        <div>
+
+            <textarea
+                id="user_input"
+                placeholder="Enter text here..."
+                required></textarea>
+
+            <div class="mic-container">
+
+                <button
+                    type="button"
+                    id="micBtn"
+                    class="icon-btn">
+
+                    🎤
+
+                </button>
+
+            </div>
+
+            <div class="row">
+
+                <div class="column">
+
+                    <label>Source Language</label>
+
+                    <select id="src_lang">
+
+                        <option value="eng_Latn">English</option>
+                        <option value="hin_Deva">Hindi</option>
+                        <option value="urd_Arab">Urdu</option>
+                        <option value="fra_Latn">French</option>
+                        <option value="deu_Latn">German</option>
+                        <option value="spa_Latn">Spanish</option>
+                        <option value="ita_Latn">Italian</option>
+                        <option value="jpn_Jpan">Japanese</option>
+                        <option value="kor_Hang">Korean</option>
+                        <option value="zho_Hans">Chinese</option>
+                        <option value="arb_Arab">Arabic</option>
+                        <option value="rus_Cyrl">Russian</option>
+                        <option value="ben_Beng">Bengali</option>
+                        <option value="pan_Guru">Punjabi</option>
+                        <option value="tam_Taml">Tamil</option>
+                        <option value="tel_Telu">Telugu</option>
+                        <option value="guj_Gujr">Gujarati</option>
+                        <option value="mar_Deva">Marathi</option>
+
+                    </select>
+
+                </div>
+
+                <div class="column">
+
+                    <label>Target Language</label>
+
+                    <select id="target_lang">
+
+                        <option value="hin_Deva">Hindi</option>
+                        <option value="eng_Latn">English</option>
+                        <option value="urd_Arab">Urdu</option>
+                        <option value="fra_Latn">French</option>
+                        <option value="deu_Latn">German</option>
+                        <option value="spa_Latn">Spanish</option>
+                        <option value="ita_Latn">Italian</option>
+                        <option value="jpn_Jpan">Japanese</option>
+                        <option value="kor_Hang">Korean</option>
+                        <option value="zho_Hans">Chinese</option>
+                        <option value="arb_Arab">Arabic</option>
+                        <option value="rus_Cyrl">Russian</option>
+                        <option value="ben_Beng">Bengali</option>
+                        <option value="pan_Guru">Punjabi</option>
+                        <option value="tam_Taml">Tamil</option>
+                        <option value="tel_Telu">Telugu</option>
+                        <option value="guj_Gujr">Gujarati</option>
+                        <option value="mar_Deva">Marathi</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <button
+                type="button"
+                id="translateBtn">
+
+                Translate
+
+            </button>
+
+        </div>
+
+        <div
+            class="result"
+            id="resultBox"
+            style="display:none;">
+
+            <div class="result-header">
+
+                <h2>Translated Text</h2>
+
+                <button
+                    type="button"
+                    id="speakerBtn"
+                    class="icon-btn">
+
+                    🔊
+
+                </button>
+
+            </div>
+
+            <p id="translatedText"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
